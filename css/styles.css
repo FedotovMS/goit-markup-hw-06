@@ -279,7 +279,6 @@ ul.contacts .item + .item {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: ;
 
     width: 528px;
     min-height: 581px;
@@ -295,6 +294,7 @@ ul.contacts .item + .item {
     transition-duration: 250ms;
     transition-timing-function: var(--timing);
     
+    z-index: 1;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -414,6 +414,7 @@ ul.contacts .item + .item {
 }
 .activ-thumb {
     position: relative;
+    z-index: -1;
 }
 .overlay-activities {
     position: absolute;
