@@ -406,7 +406,6 @@ ul.contacts .item + .item {
     position: absolute;
     left: 0;
     top: -16px;
-    /* transform: translateY(-16px); */
     
     font-family: 'Roboto';
     font-style: normal;
@@ -420,7 +419,8 @@ ul.contacts .item + .item {
     appearance: none;
 }
 .checkbox-icon{
-    vertical-align: middle;
+    vertical-align: -10%;
+    line-height: 24px;
 }
 .checkbox-icon .unchecked {
     opacity: 1;
