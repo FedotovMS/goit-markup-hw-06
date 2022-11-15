@@ -321,14 +321,19 @@ ul.contacts .item + .item {
     justify-content: center;
     right: 8px;
     top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);;
-   
+    border: 1px solid rgba(0, 0, 0, 0.1); 
 }
+
 .icon-close-button {
     left: 50%;
     top: 50%;
-}
 
+    transition: fill 250ms var(--timing);
+}
+.button-close:hover .icon-close-button,
+.button-close:focus .icon-close-button {
+    fill: var(--link-hover-color);
+}
 /* modal form */
 .form-title {
     margin-bottom: 30px;
@@ -364,7 +369,7 @@ ul.contacts .item + .item {
     transition-timing-function: var(--timing);
 }
 .form-input:focus ~ .form-icon,
-.form-input:hover ~.form-icon {
+.form-input:hover ~ .form-icon {
     fill: #2196F3;
 }
 .form-comment {
